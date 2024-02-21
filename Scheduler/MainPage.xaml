@@ -9,72 +9,64 @@
         <viewModels:ScheduleViewModels/>
     </ContentPage.BindingContext>
 
-    <CollectionView ItemsSource="{Binding GroupedSchedule}" 
-                    Margin="10">
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <StackLayout>
-                    <!-- Day heading -->
-                    <Label Text="{Binding Date, StringFormat='{0:dddd, MMM dd yyyy}'}" 
-                           FontAttributes="Bold" 
-                           FontSize="Large" 
-                           HorizontalOptions="Start" 
-                           Padding="5" />
-
-                    <!-- CollectionView for the items of a single day -->
-                    <CollectionView ItemsSource="{Binding Items}" 
-                                    ItemsLayout="VerticalList">
-                        <CollectionView.ItemTemplate>
-                            <DataTemplate>
-                                <Frame CornerRadius="5" 
-                                Padding="10" 
-                                Margin="5" 
-                                BorderColor="LightGray"
-                                BackgroundColor="{Binding BackgroundColor}">
-                                <Grid Padding="10"
-                                RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto">
-                                <!-- Subject Name -->
-                                <Label Grid.Row="0" 
-                                Text="{Binding SubjectName}" 
-                                FontAttributes="Bold"/>
-
-                                <!-- Start Date -->
-                                <Label Grid.Row="1" 
-                                Text="{Binding StartDate, StringFormat='Start: {0:HH:mm}'}" 
-
-                                />
-
-                                <!-- End Date -->
-                                <Label Grid.Column="1" Grid.Row="2" 
-                                Text="{Binding EndDate, StringFormat='End: {0:HH:mm}'}" 
-
-                                />
-
-                                <!-- Instructor -->
-                                <Label Grid.Row="3" 
-                                Text="{Binding Instructor}" 
-                                HorizontalOptions="Start" 
-                                HorizontalTextAlignment="Start"/>
-
-                                <!-- Group -->
-                                <Label Grid.Row="4" 
-                                Text="{Binding Group}" 
-                                />
-
-                                <!-- Building -->
-                                <Label Grid.Row="5" 
-                                Text="{Binding Building}" 
-                                 
-                                HorizontalOptions="Start" 
-                                HorizontalTextAlignment="Start"/>
-                                </Grid>
-                                </Frame>
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
-
-                    </CollectionView>
-                </StackLayout>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+    <ScrollView x:Name="MainScrollView" Orientation="Vertical">
+        <FlexLayout x:Name="MyFlexLayout" 
+                    BindableLayout.ItemsSource="{Binding GroupedSchedule}"
+                    Direction="Column" Margin="15">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <!-- Day heading -->
+                        <Label Text="{Binding Date, StringFormat='{0:dddd, MMM dd yyyy}'}" 
+                               FontAttributes="Bold" 
+                               FontSize="Large" 
+                               HorizontalOptions="Start" 
+                               Padding="5" />
+                        <!-- CollectionView for the items of a single day -->
+                        <CollectionView ItemsSource="{Binding Items}" 
+                                        ItemsLayout="VerticalList">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Frame CornerRadius="5" 
+                                           Padding="10" 
+                                           Margin="5" 
+                                           BorderColor="LightGray"
+                                           BackgroundColor="{Binding BackgroundColor}">
+                                        <Grid Padding="10"
+                                              RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto">
+                                            <!-- Subject Name -->
+                                            <Label Grid.Row="0" 
+                                                   Text="{Binding SubjectName}" 
+                                                   FontAttributes="Bold"/>
+                                            <!-- Start Date -->
+                                            <Label Grid.Row="1" 
+                                                   Text="{Binding StartDate, StringFormat='Start: {0:HH:mm}'}" />
+                                            <!-- End Date -->
+                                            <Label Grid.Row="2" 
+                                                   Text="{Binding EndDate, StringFormat='End: {0:HH:mm}'}" />
+                                            <!-- Instructor -->
+                                            <Label Grid.Row="3" 
+                                                   Text="{Binding Instructor}" 
+                                                   HorizontalOptions="Start" />
+                                            <!-- Group -->
+                                            <Label Grid.Row="4" 
+                                                   Text="{Binding Group}" />
+                                            <!-- Building -->
+                                            <Label Grid.Row="5" 
+                                                   Text="{Binding Building}" 
+                                                   HorizontalOptions="Start" />
+                                            <!-- Room -->
+                                            <Label Grid.Row="6" 
+                                                   Text="{Binding Room}" 
+                                                   HorizontalOptions="Start" />
+                                        </Grid>
+                                    </Frame>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </StackLayout>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </FlexLayout>
+    </ScrollView>
 </ContentPage>

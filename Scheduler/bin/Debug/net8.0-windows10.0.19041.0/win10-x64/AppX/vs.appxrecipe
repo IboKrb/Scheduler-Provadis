@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\ibrah\source\Scheduler\Scheduler\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-02-19T13:49:02.389</Modified>
+      <Modified>2024-02-21T22:18:01.766</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ibrah\source\Scheduler\Scheduler\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-02-19T13:49:02.176</Modified>
+      <Modified>2024-02-21T22:18:01.637</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ibrah\source\Scheduler\Scheduler\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Scheduler.runtimeconfig.json">
       <PackagePath>Scheduler.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ibrah\source\Scheduler\Scheduler\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Scheduler.dll">
       <PackagePath>Scheduler.dll</PackagePath>
-      <Modified>2024-02-19T13:49:00.812</Modified>
+      <Modified>2024-02-21T22:18:01.338</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ibrah\source\Scheduler\Scheduler\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Scheduler.exe</PackagePath>
-      <Modified>2024-02-19T13:49:00.868</Modified>
+      <Modified>2024-02-21T22:18:01.338</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ibrah\source\Scheduler\Scheduler\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -288,7 +288,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ibrah\source\Scheduler\Scheduler\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Scheduler.deps.json">
       <PackagePath>Scheduler.deps.json</PackagePath>
-      <Modified>2024-02-19T13:49:01.779</Modified>
+      <Modified>2024-02-21T22:00:45.095</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ibrah\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

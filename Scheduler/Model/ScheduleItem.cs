@@ -130,6 +130,14 @@ namespace Scheduler.Model
             else if (SubjectName.Contains("Algorithmen"))
             {
                 BackgroundColor = Colors.IndianRed; // Algorithmen
+            }           
+            else if (SubjectName.Contains("Dekan"))
+            {
+                BackgroundColor = Colors.BlueViolet; // Algorithmen
+            }
+            else if (SubjectName.Contains("Programmierung"))
+            {
+                BackgroundColor = Colors.DarkSeaGreen; // Algorithmen
             }
 
             else
